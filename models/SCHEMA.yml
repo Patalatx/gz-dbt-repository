@@ -1,7 +1,17 @@
 
 version: 2
 
-models: 
-  - name: raw_gz_sales
-    columns: 
-          
+sources: 
+  - name: raw_gz_data
+    description: raw_gz_data
+    tables: 
+    - name: sales
+      identifier: raw_gz_sales
+      description: raw_gz_sales
+    - name: product
+      identifier: raw_gz_product
+      description: raw_gz_product
+    - name: ship
+      identifier: raw_gz_ship
+      description: raw_gz_ship
+
